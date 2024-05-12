@@ -1,1 +1,228 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Layers Control Tutorial - Leaflet</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" crossorigin="" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" crossorigin=""></script>
+	<link rel="stylesheet" href="./L.Control.Layers.Tree.css" />
+	<script src="./L.Control.Layers.Tree.js"></script>
+	<script src="./papaparse.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/d3-fetch@3"></script>
+
+	<style>
+		html,
+		body {
+			height: 100%;
+			margin: 0;
+		}
+
+		.leaflet-container {
+			height: 400px;
+			width: 600px;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	</style>
+
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+		}
+
+		#map {
+			height: 100%;
+			width: 100vw;
+		}
+	</style>
+
+
+</head>
+
+<body>
+
+	<div id='map'></div>
+
+	<script>
+
+		function createMarker(text, lat, long) {
+			var marker1 = L.marker([lat, long]);
+			marker1.bindPopup(text);
+			marker1.on('mouseover', function (e) {
+				this.openPopup();
+			});
+			marker1.on('mouseout', function (e) {
+				this.closePopup();
+			});
+			return marker1
+		}
+		var markers = {};
+		var markerText = {};
+		Papa.parse("/PlantMaterials.csv", {
+			download: true,
+			complete: function (results) {
+				console.log(results);
+
+				var baseTree = {
+					label: 'Base Layers',
+					children: [
+						{ label: 'OpenStreetMap', layer: osm },
+						{ label: 'Satellite', layer: satellite }
+					]
+				};
+				var overlays = {};
+
+				const data = results.data
+				var weeks = {};
+
+				for (let i = 1; i < data.length; i++) {
+					const week = data[i][0]
+					const listNum = data[i][1]
+					const mapDesignation = data[i][2]
+					const commonName = data[i][3]
+					const botanicalName = data[i][4]
+					const latlong = data[i][5]
+					if (!latlong) {
+						continue;
+					}
+					const [lat, long] = latlong.split(", ")
+					const description = data[i][6]
+					markerText[mapDesignation] = "<b>Common Name:</b> " + commonName + "<br/><b>Botanical Name:</b> " + botanicalName + (description ? "<br/><b>Notes:</b> " + description : "");
+					const marker = createMarker(markerText[mapDesignation], lat, long)
+					markers[mapDesignation] = marker;
+
+					if (!weeks[week]) {
+						weeks[week] = {
+							label: 'Week ' + week,
+							selectAllCheckbox: true,
+							collapsed: true,
+							children: [
+								{ label: "<span class='plant' data-map-designation='" + mapDesignation + "'>" + commonName + "</span>", layer: marker }
+							]
+						}
+					} else {
+						weeks[week].children.push(
+							{ label: "<span class='plant' data-map-designation='" + mapDesignation + "'>" + commonName + "</span>", layer: marker }
+						)
+					}
+				}
+
+				var overlaysTree = {
+					label: 'Plants',
+					selectAllCheckbox: false,
+					children: [
+						{
+							label: 'By Week',
+							selectAllCheckbox: false,
+							collapsed: true,
+							children: Object.values(weeks)
+						}
+					]
+				};
+
+				var layerControl = L.control.layers.tree(baseTree, overlaysTree, { collapsed: false }).addTo(map);
+				var plantLabels = document.getElementsByClassName('plant');
+
+				for (let i = 0; i < plantLabels.length; i++) {
+					plantLabels[i].addEventListener("pointerover", (event) => {
+						console.log(plantLabels[i].dataset.mapDesignation);
+						markers[plantLabels[i].dataset.mapDesignation].openPopup();
+					});
+					plantLabels[i].addEventListener("pointerout", (event) => {
+						console.log(plantLabels[i].dataset.mapDesignation);
+					//	markers[plantLabels[i].dataset.mapDesignation].closePopup();
+					});
+				}
+
+			}
+		});
+
+
+
+		var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			maxZoom: 19,
+			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+		});
+
+		var satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+			attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+		});
+
+		var map = L.map('map', {
+			center: [34.975509, -81.991214],
+			zoom: 17,
+			layers: [osm]
+		});
+
+		function onLocationFound(e) {
+			var radius = e.accuracy;
+
+			L.marker(e.latlng).addTo(map);
+
+
+			for (var key in markers) {
+				const popup = markers[key].getPopup();
+				const bearing = e.latlng.bearingTo( markers[key].getLatLng());
+				popup.setContent(markerText[key] + "<br/><b>Distance:</b> " + getDistanceString(e.latlng.distanceTo(markers[key].getLatLng()))
+					+ "<br/><b>Bearing:</b> " + bearing + "&deg;"
+					+ "<br/><div id='arrow' style='transform: rotate("+bearing+"deg);'></div>"
+				)
+			}
+		}
+
+		function getDistanceString(meters) {
+			let result = (meters * 0.000621371192).toFixed(2);
+			if (result < 1) {
+				return (meters * 3.28084).toFixed(0) + " ft";
+			} else {
+				return result + " miles";
+			}
+		}
+
+		map.on('locationfound', onLocationFound);
+
+		function onMapClick(e) {
+			alert("You clicked the map at " + e.latlng);
+		}
+
+		map.on('click', onMapClick);
+
+		map.locate({ enableHighAccuracy: true, watch: true });
+		
+
+		L.LatLng.prototype.bearingTo = function(LatLng) {
+			let d2r  = Math.PI / 180;
+			let r2d  = 180 / Math.PI;
+			let lat1 = this.lat * d2r;
+			let lat2 = LatLng.lat * d2r;
+			let dLon = (LatLng.lng-this.lng) * d2r;
+			let y    = Math.sin(dLon) * Math.cos(lat2);
+			let x    = Math.cos(lat1)*Math.sin(lat2) - Math.sin(lat1)*Math.cos(lat2)*Math.cos(dLon);
+			return (( Math.atan2(y, x) * r2d  + 360 ) % 360).toFixed(2);
+		};
+	</script>
+
+
+
+</body>
+<style>
+	#arrow {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 5px;
+		width: 0;
+		height: 0;
+		border-bottom: 24px solid red;
+		border-left: 8px solid transparent;
+		border-right: 8px solid transparent;
+	}
+</style>
+
+</html>

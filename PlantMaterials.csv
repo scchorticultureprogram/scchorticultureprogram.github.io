@@ -1,0 +1,47 @@
+Week,List Number,Map Designation,Common Name,Botanical Name,Coordinates,Location Description
+2,1,2A,Red Maple,Acer rubrum,"34.97647405771604, -81.99155676427696",
+2,2,2B,Sugar Maple,Acer saccharum,"34.97621032507545, -81.9914280182469",
+2,3,2C,Silver Maple,Acer saccharinum,"34.976799326814486, -81.99161040845948",
+2,4,2D,Norway Maple,Acer platanoides,,
+2,5,2E,Water Oak,Quercus nigra,"34.97464988955122, -81.99283349577054",
+2,6,2F,Willow Oak,Quercus phellos,"34.97614977918261, -81.99179403093527",
+2,7,2G,Southern Red Oak,Quercus facata (Red Oak Group),"34.97625331759279, -81.99442312459955",
+2,8,2H,Pin Oak,Quercus palustris (Red Oak Group),"34.973485173923955, -81.99222371321616",
+2,9,2i,Nuttall Oak,Quercus nuttalli (Red Oak Group),"34.9740752941783, -81.99175432663098",
+2,10,2J,Live Oak,Quercus virginiana,"34.97516392626273, -81.99043917662087",
+2,11,2K,Laurel Oak,Quercus hemisphaerica/ Q. laurifolia,"34.977442741565376, -81.99193878075971",
+2,12,2L,Sweetgum,Liquidambar styraciflua,"34.97404084089269, -81.99154022342393",
+2,13,2M,Sycamore,Platanus occidentalis,"34.975226014192415, -81.99118885403907",
+2,14,2N,London Plane Tree,Platanus ×acerfolia,"34.97423699733052, -81.99240925913539",
+2,15,2O,American Elm,Ulmus americana,"34.976549080308374, -81.9906255901278",
+2,16,2P,Chinese Elm,Ulmus parvifolia,"34.973544678409645, -81.99168238048311",
+2,17,2Q,Winged Elm,Ulmus alata,"34.974869969496886, -81.99233147507778",
+2,18,2R,Zelkova,Zelkova serrata,"34.97567436457702, -81.99273917085085",
+2,19,2S,Bald Cypress,Taxodium distichum,"34.974540297099885, -81.99188086397939",
+2,20,2T,Dawn Redwood,Metasequoia glyptostroboides,"34.97633809445457, -81.9913229644983",
+2,21,2U,Ginkgo,Ginkgo biloba,"34.97411391883568, -81.99079993374683",
+2,22,2V,River Birch,Betula nigra,"34.97683259169551, -81.98968949918218",
+2,23,2W,Yellow Poplar,Liriodendron tulipifera,"34.975678760156995, -81.99323001509647",
+3,1,3A,Southern Magnolia,Magnolia grandiflora,"34.97578771755825, -81.99181006929301","Row along parking lot/sidewalk, north side of Powers building D Wing"
+3,2,3B,Leyland Cypress,1) xCupressocyparis leylandii<br/>2) xCuprocyparis leylandii<br/>3) xHesperocyparis leylandii<br/>4) Cupressus x leylandii,"34.9766960173209, -81.99431695662082",Northwest corner of campus
+3,3,3C,Cryptomeria,Cryptomeria japonica,"34.97635316565176, -81.99478366096848","Northwest corner of campus, across from driveway to greenhouses"
+3,4,3D,China Fir,Cunninghamia lanceolata,"34.97351748354108, -81.99025366339467",Corners of Health Science and Hull buildings
+3,5,3E,Deodara Cedar,Cedrus deodara,"34.97413929595798, -81.99207803427099",Along Bluejay Way across from back of Powers building
+3,6,3F,Blue Atlas Cedar,Cedrus atlantica 'Glauca',"34.97395973563675, -81.99173252265878","Back entrance of Powers A-wing, across from parenchyma"
+3,7,3G,Eastern Red Cedar,Juniperus virginiana,"34.97385522944722, -81.99043859326028","Corners of Health Science and Hull buildings, near eucalyptus"
+3,8,3H,Western Red Cedar,Thuja plicata  and   Thuja × 'Green Giant',"34.974303049385625, -81.99327810218037",Behind shed
+3,9,3I,Canadian Hemlock,Tsuga canadensis,"34.97472118486516, -81.99250629654874",Garden next to big magnolia
+3,10,3J,White Pine,Pinus strobus,"34.97687501576166, -81.98882630576607","Along New Cut Road, between entrances"
+3,11,3K,Loblolly Pine,Pinus taeda,"34.976329970036815, -81.98828449956936",Either side of main campus entrance along New Cut Road
+3,12,3L,Virginia Pine,Pinus virginiana,,Milliken
+3,13,3M,Japanese Black Pine,Pinus thunbergiana,"34.977459617242175, -81.99099353067221",Linda's Hill
+3,14,3N,White Oak,Quercus alba (White Oak Group),"34.974277224923284, -81.99064484351257",Southwest corner of Green Space
+3,15,3O,Overcup Oak,Quercus lyrata (White Oak Group),"34.976017885760804, -81.98742082824971",North side of parking lot for Terhune and Ledbetter buildings
+3,16,3P,Bur Oak,Quercus macrocarpa (White Oak Group),"34.97367336960087, -81.99023781826727",Corners of Health Science and Hull buildings
+3,17,3Q,Post Oak,Quercus stellata (White Oak Group),,Milliken
+3,18,3R,Sawtooth Oak,Quercus acutissima,,Milliken
+3,19,3S,Chinese Evergreen Oak,Quercus myrsinifolia,"34.97360468696326, -81.99279597513029","Behind Horticulture Pavillion, southwest"
+3,20,3T,"American Hornbeam, Musclewood",Carpinus caroliniana,"34.97447173242081, -81.99225550999137","Garden, across from big cherry"
+3,21,3U,Columnar European Hornbeam,Carpinus betulus 'Fastigiata',"34.97559865802245, -81.98839648177888",Behind sign at Tehrune main entrance
+3,22,3V,American Beech,Fagus grandifolia,"34.974865691111084, -81.9921126823718",Behind Powers C-wing walkway near Bluejay Way
+3,23,3W,European Beech,Fagus sylvatica,,
