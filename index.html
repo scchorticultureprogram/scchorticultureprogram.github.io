@@ -11,6 +11,9 @@
 
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" crossorigin="" />
 	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" crossorigin=""></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+
 	<link rel="stylesheet" href="./L.Control.Layers.Tree.css" />
 	<script src="./L.Control.Layers.Tree.js"></script>
 	<script src="./papaparse.js"></script>
@@ -161,15 +164,15 @@
 			layers: [osm]
 		});
 
-		var currentLocationMarker;
+		//var currentLocationMarker;
 		function onLocationFound(e) {
-			var radius = e.accuracy;
+			//var radius = e.accuracy;
 
-			if (currentLocationMarker) {
-				map.removeLayer(currentLocationMarker);
-			}
-			currentLocationMarker = L.marker(e.latlng);
-			currentLocationMarker.addTo(map);
+			//if (currentLocationMarker) {
+		//		map.removeLayer(currentLocationMarker);
+			//}
+			//currentLocationMarker = L.marker(e.latlng);
+			//currentLocationMarker.addTo(map);
 
 
 			for (var key in markers) {
@@ -192,6 +195,11 @@
 		}
 
 		map.on('locationfound', onLocationFound);
+
+		var lc = L.control.locate().addTo(map);
+
+		// request location update and set location
+		lc.start();
 
 		function onMapClick(e) {
 			alert("You clicked the map at " + e.latlng);
