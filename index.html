@@ -133,8 +133,9 @@
 
 				for (let i = 0; i < plantLabels.length; i++) {
 					plantLabels[i].addEventListener("pointerover", (event) => {
-						console.log(i);
-						markers[i].openPopup();
+						if (marker[i]){
+							markers[i].openPopup();
+						}
 					});
 				}
 
