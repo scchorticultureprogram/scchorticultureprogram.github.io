@@ -58,6 +58,9 @@
 		function createMarker(text, lat, long) {
 			var marker1 = L.marker([lat, long]);
 			marker1.bindPopup(text);
+			marker1.on('click', function (e) {
+				this.openPopup();
+			});
 			marker1.on('mouseover', function (e) {
 				this.openPopup();
 			});
