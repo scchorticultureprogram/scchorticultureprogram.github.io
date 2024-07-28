@@ -164,17 +164,7 @@
 			layers: [osm]
 		});
 
-		//var currentLocationMarker;
 		function onLocationFound(e) {
-			//var radius = e.accuracy;
-
-			//if (currentLocationMarker) {
-		//		map.removeLayer(currentLocationMarker);
-			//}
-			//currentLocationMarker = L.marker(e.latlng);
-			//currentLocationMarker.addTo(map);
-
-
 			for (var key in markers) {
 				const popup = markers[key].getPopup();
 				const bearing = e.latlng.bearingTo( markers[key].getLatLng());
@@ -196,7 +186,7 @@
 
 		map.on('locationfound', onLocationFound);
 
-		var lc = L.control.locate().addTo(map);
+		var lc = L.control.locate({keepCurrentZoomLevel: true}).addTo(map);
 
 		// request location update and set location
 		lc.start();
