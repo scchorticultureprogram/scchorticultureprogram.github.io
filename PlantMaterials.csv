@@ -1,47 +1,127 @@
-Week,Common Name,Botanical Name,Coordinates,Location Description
-2,Red Maple,Acer rubrum,"34.97647405771604, -81.99155676427696",
-2,Sugar Maple,Acer saccharum,"34.97621032507545, -81.9914280182469",
-2,Silver Maple,Acer saccharinum,"34.976799326814486, -81.99161040845948",
+Week,Common Name,Botanical Name,Location Description,Coordinates
+2,Red Maple,Acer rubrum,,"34.97647405771604, -81.99155676427696"
+2,Sugar Maple,Acer saccharum,,"34.97621032507545, -81.9914280182469"
+2,Silver Maple,Acer saccharinum,,"34.976799326814486, -81.99161040845948"
 2,Norway Maple,Acer platanoides,,
-2,Water Oak,Quercus nigra,"34.97464988955122, -81.99283349577054",
-2,Willow Oak,Quercus phellos,"34.97614977918261, -81.99179403093527",
-2,Southern Red Oak,Quercus facata (Red Oak Group),"34.97625331759279, -81.99442312459955",
-2,Pin Oak,Quercus palustris (Red Oak Group),"34.973485173923955, -81.99222371321616",
-2,Nuttall Oak,Quercus nuttalli (Red Oak Group),"34.9740752941783, -81.99175432663098",
-2,Live Oak,Quercus virginiana,"34.97516392626273, -81.99043917662087",
-2,Laurel Oak,Quercus hemisphaerica / Q. laurifolia,"34.977442741565376, -81.99193878075971",
-2,Sweetgum,Liquidambar styraciflua,"34.97404084089269, -81.99154022342393",
-2,Sycamore,Platanus occidentalis,"34.975226014192415, -81.99118885403907",
-2,London Plane Tree,Platanus ×acerfolia,"34.97423699733052, -81.99240925913539",
-2,American Elm,Ulmus americana,"34.976549080308374, -81.9906255901278",
-2,Chinese Elm,Ulmus parvifolia,"34.973544678409645, -81.99168238048311",
-2,Winged Elm,Ulmus alata,"34.974869969496886, -81.99233147507778",
-2,Zelkova,Zelkova serrata,"34.97567436457702, -81.99273917085085",
-2,Bald Cypress,Taxodium distichum,"34.974540297099885, -81.99188086397939",
-2,Dawn Redwood,Metasequoia glyptostroboides,"34.97633809445457, -81.9913229644983",
-2,Ginkgo,Ginkgo biloba,"34.97411391883568, -81.99079993374683",
-2,River Birch,Betula nigra,"34.97683259169551, -81.98968949918218",
-2,Yellow Poplar,Liriodendron tulipifera,"34.975678760156995, -81.99323001509647",
-3,Southern Magnolia,Magnolia grandiflora,"34.97578771755825, -81.99181006929301","Row along parking lot/sidewalk, north side of Powers building D Wing"
-3,Leyland Cypress,1) xCupressocyparis leylandii<br/>2) xCuprocyparis leylandii<br/>3) xHesperocyparis leylandii<br/>4) Cupressus x leylandii,"34.9766960173209, -81.99431695662082",Northwest corner of campus
-3,Cryptomeria,Cryptomeria japonica,"34.97635316565176, -81.99478366096848","Northwest corner of campus, across from driveway to greenhouses"
-3,China Fir,Cunninghamia lanceolata,"34.97351748354108, -81.99025366339467",Corners of Health Science and Hull buildings
-3,Deodara Cedar,Cedrus deodara,"34.97413929595798, -81.99207803427099",Along Bluejay Way across from back of Powers building
-3,Blue Atlas Cedar,Cedrus atlantica 'Glauca',"34.97395973563675, -81.99173252265878","Back entrance of Powers A-wing, across from parenchyma"
-3,Eastern Red Cedar,Juniperus virginiana,"34.97385522944722, -81.99043859326028","Corners of Health Science and Hull buildings, near eucalyptus"
-3,Western Red Cedar,Thuja plicata  and   Thuja x 'Green Giant',"34.974303049385625, -81.99327810218037",Behind shed
-3,Canadian Hemlock,Tsuga canadensis,"34.97472118486516, -81.99250629654874",Garden next to big magnolia
-3,White Pine,Pinus strobus,"34.97687501576166, -81.98882630576607","Along New Cut Road, between entrances"
-3,Loblolly Pine,Pinus taeda,"34.976329970036815, -81.98828449956936",Either side of main campus entrance along New Cut Road
-3,Virginia Pine,Pinus virginiana,,Milliken
-3,Japanese Black Pine,Pinus thunbergiana,"34.977459617242175, -81.99099353067221",Linda's Hill
-3,White Oak,Quercus alba (White Oak Group),"34.974277224923284, -81.99064484351257",Southwest corner of Green Space
-3,Overcup Oak,Quercus lyrata (White Oak Group),"34.976017885760804, -81.98742082824971",North side of parking lot for Terhune and Ledbetter buildings
-3,Bur Oak,Quercus macrocarpa (White Oak Group),"34.97367336960087, -81.99023781826727",Corners of Health Science and Hull buildings
-3,Post Oak,Quercus stellata (White Oak Group),,Milliken
-3,Sawtooth Oak,Quercus acutissima,,Milliken
-3,Chinese Evergreen Oak,Quercus myrsinifolia,"34.97360468696326, -81.99279597513029","Behind Horticulture Pavillion, southwest"
-3,"American Hornbeam, Musclewood",Carpinus caroliniana,"34.97447173242081, -81.99225550999137","Garden, across from big cherry"
-3,Columnar European Hornbeam,Carpinus betulus 'Fastigiata',"34.97559865802245, -81.98839648177888",Behind sign at Tehrune main entrance
-3,American Beech,Fagus grandifolia,"34.974865691111084, -81.9921126823718",Behind Powers C-wing walkway near Bluejay Way
+2,Water Oak,Quercus nigra,,"34.97464988955122, -81.99283349577054"
+2,Willow Oak,Quercus phellos,,"34.97614977918261, -81.99179403093527"
+2,Southern Red Oak,Quercus facata (Red Oak Group),,"34.97625331759279, -81.99442312459955"
+2,Pin Oak,Quercus palustris (Red Oak Group),,"34.973485173923955, -81.99222371321616"
+2,Nuttall Oak,Quercus nuttalli (Red Oak Group),,"34.9740752941783, -81.99175432663098"
+2,Live Oak,Quercus virginiana,,"34.97516392626273, -81.99043917662087"
+2,Laurel Oak,Quercus hemisphaerica / Q. laurifolia,,"34.977442741565376, -81.99193878075971"
+2,Sweetgum,Liquidambar styraciflua,,"34.97404084089269, -81.99154022342393"
+2,Sycamore,Platanus occidentalis,,"34.975226014192415, -81.99118885403907"
+2,London Plane Tree,Platanus ×acerfolia,,"34.97423699733052, -81.99240925913539"
+2,American Elm,Ulmus americana,,"34.976549080308374, -81.9906255901278"
+2,Chinese Elm,Ulmus parvifolia,,"34.973544678409645, -81.99168238048311"
+2,Winged Elm,Ulmus alata,,"34.974869969496886, -81.99233147507778"
+2,Zelkova,Zelkova serrata,,"34.97567436457702, -81.99273917085085"
+2,Bald Cypress,Taxodium distichum,,"34.974540297099885, -81.99188086397939"
+2,Dawn Redwood,Metasequoia glyptostroboides,,"34.97633809445457, -81.9913229644983"
+2,Ginkgo,Ginkgo biloba,,"34.97411391883568, -81.99079993374683"
+2,River Birch,Betula nigra,,"34.97683259169551, -81.98968949918218"
+2,Yellow Poplar,Liriodendron tulipifera,,"34.975678760156995, -81.99323001509647"
+3,Southern Magnolia,Magnolia grandiflora,"Row along parking lot/sidewalk, north side of Powers building D Wing","34.97578771755825, -81.99181006929301"
+3,Leyland Cypress,1) xCupressocyparis leylandii<br/>2) xCuprocyparis leylandii<br/>3) xHesperocyparis leylandii<br/>4) Cupressus x leylandii,Northwest corner of campus,"34.9766960173209, -81.99431695662082"
+3,Cryptomeria,Cryptomeria japonica,"Northwest corner of campus, across from driveway to greenhouses","34.97635316565176, -81.99478366096848"
+3,China Fir,Cunninghamia lanceolata,Corners of Health Science and Hull buildings,"34.97351748354108, -81.99025366339467"
+3,Deodara Cedar,Cedrus deodara,Along Bluejay Way across from back of Powers building,"34.97413929595798, -81.99207803427099"
+3,Blue Atlas Cedar,Cedrus atlantica 'Glauca',"Back entrance of Powers A-wing, across from parenchyma","34.97395973563675, -81.99173252265878"
+3,Eastern Red Cedar,Juniperus virginiana,"Corners of Health Science and Hull buildings, near eucalyptus","34.97385522944722, -81.99043859326028"
+3,Western Red Cedar,Thuja plicata  and   Thuja x 'Green Giant',Behind shed,"34.974303049385625, -81.99327810218037"
+3,Canadian Hemlock,Tsuga canadensis,Garden next to big magnolia,"34.97472118486516, -81.99250629654874"
+3,White Pine,Pinus strobus,"Along New Cut Road, between entrances","34.97687501576166, -81.98882630576607"
+3,Loblolly Pine,Pinus taeda,Either side of main campus entrance along New Cut Road,"34.976329970036815, -81.98828449956936"
+3,Virginia Pine,Pinus virginiana,Milliken,
+3,Japanese Black Pine,Pinus thunbergiana,Linda's Hill,"34.977459617242175, -81.99099353067221"
+3,White Oak,Quercus alba (White Oak Group),Southwest corner of Green Space,"34.974277224923284, -81.99064484351257"
+3,Overcup Oak,Quercus lyrata (White Oak Group),North side of parking lot for Terhune and Ledbetter buildings,"34.976017885760804, -81.98742082824971"
+3,Bur Oak,Quercus macrocarpa (White Oak Group),Corners of Health Science and Hull buildings,"34.97367336960087, -81.99023781826727"
+3,Post Oak,Quercus stellata (White Oak Group),Milliken,
+3,Sawtooth Oak,Quercus acutissima,Milliken,
+3,Chinese Evergreen Oak,Quercus myrsinifolia,"Behind Horticulture Pavillion, southwest","34.97360468696326, -81.99279597513029"
+3,"American Hornbeam, Musclewood",Carpinus caroliniana,"Garden, across from big cherry","34.97447173242081, -81.99225550999137"
+3,Columnar European Hornbeam,Carpinus betulus 'Fastigiata',Behind sign at Tehrune main entrance,"34.97559865802245, -81.98839648177888"
+3,American Beech,Fagus grandifolia,Behind Powers C-wing walkway near Bluejay Way,"34.974865691111084, -81.9921126823718"
 3,European Beech,Fagus sylvatica,,
+4,Chinese Pistache,Pistacia chinensis,Center of Peace Garden,"34.974877250512606, -81.9913696489128"
+4,Japanese Pagoda Tree,Sophora japonica,North part of garden beside big Sugar Maple,"34.97528054789988, -81.99256323195983"
+4,Kentucky Coffee Tree,Gymnocladus dioicus,In front of Library entrance,"34.9762849365915, -81.98981128552838"
+4,Thornless Honeylocust,Gleditsia triacanthos var. inermis,In the woods behind the Cucumber Magnolias NW corner of campus,"34.97556406368181, -81.99470899918613"
+4,Yellowwood,Cladratis kentuckea (formerly C. lutea),In the field across from the Library main entrance ,"34.97602779668104, -81.98889397001615"
+4,Pecan,Carya illinoinensis,NW of the nursery pad tree line,"34.97548054751351, -81.99420474387138"
+4,Hickory,"Carya tomentosa, C. ovata etc",Immediately to the right upon entering the Brisack Rd entrance ,"34.9729988017194, -81.9912469822905"
+4,Green Ash,Fraxinus pennsylvanica,,
+4,Black Gum,Nyssa sylvatica,End of parking lot directly south of China Fir,"34.97329551251582, -81.99021433183702"
+4,Sourwood,Oxydendrum arboreum,Hort gardens: On creek edge directly off of foot bridge,"34.97475267662738, -81.99281339233006"
+4,Sassafras,Sassafras albidum,Hort gardens: near tree-formed English Cherry Laurel,"34.97464718145583, -81.99286435429879"
+4,Persimmon,Diospyros virginiana,Across the gravel from the shops,"34.97444316724939, -81.99291645660722"
+4,Smoke Tree,"Cotinus coggygria, C. obovatus",In front of Library entrance,"34.97637079411777, -81.98977799501905"
+4,Japanese Cherry,Prunus serrulata,,
+4,Yoshino Cherry,Prunus × yedoensis,Center of Hort gardens,"34.97489620805571, -81.9929056156479"
+4,Weeping Cherry,Prunus subhirtella var. pendula,,
+4,Cucumber Magnolia,Magnolia acuminata,Just west of greenhouse driveway entrance,"34.975673478118004, -81.99499792337191"
+4,Star Magnolia,"Magnolia stellata, M. kobus, and x loebneri ",Trial beds below pavillion,"34.9736782986761, -81.99250010438006"
+4,Saucer Magnolia,Magnolia x soulangeana = M. (denudata x liliflora),Hort gardens: North end beneath power line right-of-way,"34.97515354866849, -81.99269976466968"
+4,Bigleaf Magnolia,Magnolia macrophylla,At the stop sign of the north end of Bluejay Way at the end of the overflow parking lot,"34.976431324983295, -81.99335382419915"
+4,Sweetbay Magnolia,Magnolia virginiana,At the handcapped parking for the Health Science Building west entrance,"34.973912422345485, -81.9912711608995"
+4,Umbrella Magnolia,Magnolia tripetala,Just west of Bigleaf Magnolias,"34.976479276461355, -81.9937806840951"
+4,"American Linden, Basswood",Tilia americana,Hull building front parking lot along Brisack Road,"34.97359931705491, -81.98893720106346"
+5,Callery Pear,Pyrus calleryana,Behind Gaines building,"34.97705032824065, -81.99108593715226"
+5,Crepe Myrtle,Lagerstroemia indica,Indica: outside A-wing entrance to Powers building,"34.974341403076046, -81.99090200246278"
+5,Crepe Myrtle,Lagerstroemia fauriei,Fauriei: along walkway from outdoor classroom behind Powers building,"34.97513386518507, -81.99227683795448"
+5,Crepe Myrtle,Hybrids,Hybrid: entrance to Culinary,"34.97432862109444, -81.98940449579646"
+5,Eastern Redbud,Cercis canadensis,Field across from library,"34.975841141783306, -81.98877013533357"
+5,Texas Redbud,Cercis canadensis var. texensis,Field across from library,"34.97597748030152, -81.98859854602817"
+5,Purple Leaf Plum,Prunus cerasifera,,
+5,Japanese Apricot,Prunus mume,Near entrance to Men's Garden Club,"34.97522335501825, -81.99445338111896"
+5,Crabapple,Malus x hybrida,Field across from library,"34.97611140215435, -81.98873646030326"
+5,Serviceberry,Amelanchier sp.,Field across from library,"34.976098215484086, -81.98842532405777"
+5,Silverbell,"Halesia diptera, formerly H. carolina",Lower entrance to Ledbetter building,"34.97444107367133, -81.98748655090183"
+5,Japanese Snowbell,Styrax japonicus,Northeast corner of pavillion,"34.97401469488782, -81.9928348756772"
+5,Flowering Dogwood,Cornus florida,Field across from library,"34.97585645949205, -81.9892299867612"
+5,Kousa Dogwood,Cornus kousa,Field across from library,"34.976054259906746, -81.9892943597775"
+5,Cornelian Cherry Dogwood,Cornus mas,Courtyard behind lower level of Health Sciences building,"34.97400150787431, -81.99076957473598"
+5,Swamp/Silky Dogwood,Cornus ammomum,Along creek bank at nursery,"34.97539931890365, -81.99381656417647"
+5,Pagoda Dogwood,Cornus alternifolia,Northmost end Powers building,"34.97566305415929, -81.99168689021893"
+5,Fringe Tree,Chionanthus virginicus,In the woods beyond the turf plots,"34.973421277420094, -81.99217773447907"
+5,Chinese Fringe Tree,Chionanthus retusus,Southwest corner of Hull building,"34.973772932737525, -81.9901043869"
+5,Golden Rain Tree,Koelreuteria paniculata,Deep in the woods behind pavillion,"34.97339490321122, -81.99280000695605"
+5,Chinese Flame Tree,Koelreuteria bipinnata,South of Hull building along Brisack Road,"34.97320588779918, -81.98988444576047"
+5,Trident Maple,Acer buergerianum,Hort gardens; and northeast corner of Powers building facing library,"34.974739977058206, -81.992572019194"
+5,Trident Maple,Acer buergerianum,Hort gardens; and northeast corner of Powers building facing library,"34.97565865858862, -81.99128455886714"
+5,Paperbark Maple,Acer griseum,Hort gardens ,"34.974911406448776, -81.99263102779227"
+5,Amur maple,Acer ginnala,South of Health Sciences building along Brisack Road,"34.97298610189152, -81.99051744708844"
+5,Japanese Maple,Acer palmatum,Peace Garden,"34.97484547210934, -81.99137038955462"
+5,Red Japanese Maple,Acer palmatum var. atropurpeum,Hort gardens ,"34.97485865899092, -81.99276513824283"
+5,Laceleaf Japanese Maple,Acer palmatum var. dissectum,Peace Garden,"34.97494217578767, -81.9914079404808"
+6,Katsura,Cercidphyllum japonicum,Deep woods below pavillion behind Cryptomerias,"34.97282393782434, -81.99286385999348"
+6,Persian Parrotia,Parrotia persica,Along the walkway of the utility parking lot south of Green Space,"34.974009678187855, -81.99037074671404"
+6,Witch Hazel,Hamamelis sp.,In the medicinal garden courtyard of the Health Sciences Building,"34.97390857773165, -81.99060544000338"
+6,Red Buckeye,Aesculus pavia,,
+6,Bottlebrush Buckeye,Aesculus parviflora,Hull Building Southeast corner entrance,"34.974168861787376, -81.98909237630984"
+6,Stewartia,Stewartia sp.,"Near entrance to Nursery/Greenhouses driveway, NW corner of campus","34.97614384821437, -81.99434245580359"
+6,Franklinia,Franklinia alatamaha,,
+6,Gordonia,Gordonia lasianthus,,
+6,Gordlinia,xGordlinia grandiflora,"Perennial border between B & C wings Powers building, near C wing windows","34.975009237274996, -81.99137621235536"
+6,Wax Myrtle,Myrica cerifera,On slope above Parenchyma at back entrance of A wing Powers,"34.97399054701675, -81.99144729089483"
+6,Banana Shrub,(Michelia) Magnolia figo,Back right corner of Peace Garden between B and C wings Powers,"34.974905940244476, -81.99152239274683"
+6,Lotus Tree,(Manglietia) Magnolia yuyuanensis x insignis,Center of NE end of Powers Building D wing,"34.97564220348294, -81.99131988596618"
+7,"Althea, Rose of Sharon",Hibiscus syriacus,"Along Bluejay Way, not far from middle entrance to hort gardens","34.97486870106265, -81.99233003543245"
+7,Beautyberry,Callicarpa americana,In front of pavillion entrance and on the corner near the nursery pad,"34.974965404722866, -81.99391790316935"
+7,Bigleaf Hydrangea,Hydrangea macrophylla,At the corner of B wing Powers building at Peace Garden,"34.974797556637476, -81.99109430185501"
+7,Oakleaf Hydrangea,Hydrangea quercifolia,NW corner of hort gardens near aucuba and camellias,"34.97500838473482, -81.99298799081862"
+7,Hills of Snow Hydrangea,Hydrangea arborescens,Immediately off foot bridge in hort gardens,"34.974633110347554, -81.99288507294054"
+7,Panicle Hydrangea,Hydrangea paniculata,All along Linda's Hill behind the Gaines building,"34.97736540592977, -81.99059515013826"
+7,Hybrid Spirea,Spiraea x bumalda,Tucked in the bed bed off foot bridge towards shops,"34.97449836496869, -81.99296133495642"
+7,Thunberg Spirea,Spiraea thunbergii,Walkway connecting Powers A wing toward Hull building's utility parking lot,"34.974179802177616, -81.99066404891131"
+7,Weigela,Weigela florida,"Along Bluejay Way, south of Hibiscus syriacus","34.97466247258931, -81.99225447771167"
+7,Forsythia,Forsythia x internedia,"On the slope, east side of hort gardens","34.974820144306285, -81.9924115570984"
+7,Quince,Chaenomeles speciosa,"In hort gardens across from new bridge, slightly NE","34.97446618695938, -81.99252543965567"
+7,Sweetshrub,Calycanthus floridus,Hort gardens at the base of Trident Maple,"34.97475725389365, -81.9925381608766"
+7,Butterfly Bush,Buddleja davidii,Parking lot island between Terhune and Ledbetter buildings; in perennial border next to Peace Garden,"34.97506519423089, -81.98786582397098"
+7,"Vitex, Chaste Tree",Vitex agnus-castus,"Medicinal garden, back of Health Sciences building, across from Hull's utility parking lot","34.974076227883025, -81.99059406400428"
+7,Fothergilla,"Fothergilla gardenii, F. major, F. milleri",Corner of Hull Building across from Health Sciences side entrance,"34.973901528997175, -81.9903194332214"
+7,"Kerria, Easter Rose",Kerria japonica,Southeast portion of Linda's Hill across from the back of the Gaines building,"34.9772799617679, -81.99045674861132"
+7,Winter Honeysuckle,Lonicera fragrantissima,,

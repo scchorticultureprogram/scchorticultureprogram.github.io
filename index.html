@@ -92,12 +92,12 @@
 					const week = data[i][0]
 					const commonName = data[i][1]
 					const botanicalName = data[i][2]
-					const latlong = data[i][3]
+					const latlong = data[i][4]
 					if (!latlong) {
 						continue;
 					}
 					const [lat, long] = latlong.split(", ")
-					const description = data[i][4]
+					const description = data[i][3]
 					markerText[i] = "<b>Common Name:</b> " + commonName + "<br/><b>Botanical Name:</b> " + botanicalName + (description ? "<br/><b>Notes:</b> " + description : "");
 					const marker = createMarker(markerText[i], lat, long)
 					markers[i] = marker;
