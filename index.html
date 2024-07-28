@@ -147,7 +147,7 @@
 
 
 		var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-			maxZoom: 19,
+			maxZoom: 22,
 			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 		});
 
@@ -161,10 +161,15 @@
 			layers: [osm]
 		});
 
+		var currentLocationMarker;
 		function onLocationFound(e) {
 			var radius = e.accuracy;
 
-			L.marker(e.latlng).addTo(map);
+			if (currentLocationMarker) {
+				map.removeLayer(currentLocationMarker);
+			}
+			currentLocationMarker = L.marker(e.latlng);
+			currentLocationMarker.addTo(map);
 
 
 			for (var key in markers) {
