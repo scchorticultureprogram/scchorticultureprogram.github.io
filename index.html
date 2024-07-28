@@ -95,9 +95,9 @@
 					}
 					const [lat, long] = latlong.split(", ")
 					const description = data[i][4]
-					markerText[mapDesignation] = "<b>Common Name:</b> " + commonName + "<br/><b>Botanical Name:</b> " + botanicalName + (description ? "<br/><b>Notes:</b> " + description : "");
-					const marker = createMarker(markerText[mapDesignation], lat, long)
-					markers[mapDesignation] = marker;
+					markerText[i] = "<b>Common Name:</b> " + commonName + "<br/><b>Botanical Name:</b> " + botanicalName + (description ? "<br/><b>Notes:</b> " + description : "");
+					const marker = createMarker(markerText[i], lat, long)
+					markers[i] = marker;
 
 					if (!weeks[week]) {
 						weeks[week] = {
@@ -105,12 +105,12 @@
 							selectAllCheckbox: true,
 							collapsed: true,
 							children: [
-								{ label: "<span class='plant' data-map-designation='" + mapDesignation + "'>" + commonName + "</span>", layer: marker }
+								{ label: "<span class='plant' data-map-designation='" + i + "'>" + commonName + "</span>", layer: marker }
 							]
 						}
 					} else {
 						weeks[week].children.push(
-							{ label: "<span class='plant' data-map-designation='" + mapDesignation + "'>" + commonName + "</span>", layer: marker }
+							{ label: "<span class='plant' data-map-designation='" + i + "'>" + commonName + "</span>", layer: marker }
 						)
 					}
 				}
@@ -133,12 +133,8 @@
 
 				for (let i = 0; i < plantLabels.length; i++) {
 					plantLabels[i].addEventListener("pointerover", (event) => {
-						console.log(plantLabels[i].dataset.mapDesignation);
-						markers[plantLabels[i].dataset.mapDesignation].openPopup();
-					});
-					plantLabels[i].addEventListener("pointerout", (event) => {
-						console.log(plantLabels[i].dataset.mapDesignation);
-					//	markers[plantLabels[i].dataset.mapDesignation].closePopup();
+						console.log(i);
+						markers[i].openPopup();
 					});
 				}
 
